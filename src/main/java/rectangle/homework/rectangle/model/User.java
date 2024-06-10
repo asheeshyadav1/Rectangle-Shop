@@ -1,18 +1,27 @@
+/*
+ * AUTHOR: Asheesh Yadav
+ * DESCRIPTION: This class is the model for the users making the rectangles
+ * DATE: 6/09/2024
+ *
+ */
 package rectangle.homework.rectangle.model;
 
 import jakarta.persistence.*;
+
+//Creates a table in psql database with the name users
+// and following attributes down below
 
 @Entity
 @Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int uid;
+    private int uid; // not used but can be used to get the user id for future implementations
     private String name; 
     private String color; 
     private float width;
     private float height;
-    private String delete; 
+    private String delete; //user will not enter anything here but it will be used to delete the rectangle
     public User() {
 
     }
