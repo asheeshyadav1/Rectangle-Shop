@@ -1,7 +1,7 @@
 /*
  * AUTHOR: Asheesh Yadav
  * DESCRIPTION: This class is the model for the users making the rectangles
- * DATE: 6/09/2024
+ * DATE: 6/14/2024
  *
  */
 package rectangle.homework.rectangle.model;

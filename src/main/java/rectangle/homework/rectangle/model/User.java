@@ -1,7 +1,7 @@
 /*
  * AUTHOR: Asheesh Yadav
  * DESCRIPTION: This class is the model for the users making the rectangles
- * DATE: 6/09/2024
+ * DATE: 6/14/2024
  *
  */
 package rectangle.homework.rectangle.model;
@@ -11,6 +11,8 @@ import jakarta.persistence.*;
 //Creates a table in psql database with the name users
 // and following attributes down below
 
+//here and throughout my project I use user and rectangle interchangeably but just know 
+//that they are the same thing as a user refers to a user's rectangle and vice versa 
 @Entity
 @Table(name = "users")
 public class User {

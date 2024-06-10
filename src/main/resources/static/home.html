@@ -1,3 +1,11 @@
+<!-- 
+ /*
+ * AUTHOR: Asheesh Yadav
+ * DESCRIPTION: This is the home page containing info about the company and reffering 
+                them to the add or view rectangles
+ * DATE: 6/14/2024
+ *
+ */ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +15,37 @@
     <title>Rectangular Innovations</title>
 </head>
 <body>
-    <!-- For my UI I wanted to keep it simple on the landing page and sort of guide the users
-    to show them what they wanted to see(and also complete the marking criteria)-->
+    <!-- UI MOCKUP: The website has a simple design with top and bottom banners for consistent formatting.
+        There are three tabs on the top left for navigating to the home, about us, and products pages.
+        The banners remain on all pages to facilitate easy navigation.
+
+        To add a rectangle, users go to add.html, submit the form, and the data is sent to /users/add, 
+        where it's stored in the database. A display page confirms the addition, and users are redirected 
+        to the view/add page to see or create rectangles.
+
+        For viewing or editing rectangles, users navigate via /users/product. Clicking a link or button 
+        sends a request to the controller, which returns the rectangle's attributes or processes edits. 
+        After editing, users see a confirmation page and are redirected back to view the rectangles.
+
+        Deleting a rectangle works similarly: the delete button sends a request to the controller, 
+        confirms deletion, and redirects users to the view/add page.
+
+        The home, about us, and products banners are consistent across all pages for easy navigation. 
+        For detailed endpoint information, refer to the usersController.java file. -->
+
+    <!-- I wanted to display the same banner across all files so i did it this way-->
+    <!-- This allows the user to go back and forth around pages to see/do things they want -->
     <div id="btns">
         <a id="about"href="./about.html">About</a>
         <a id="products"href="/users/view">Products</a>
         <a id="home" href="./home.html">Home</a>
     </div>
+
+    <!-- Title -->
     <h1>Rectangle Innovations</h1>
+    <!-- Paragraphs talking about the company -->
+    <!-- I wanted to format all info the same way so the id para is associated in all files displaying -->
+    <!-- content; so its centered and has padding on the left and right -->
     <div id="para">
         <p>Rectangle Innovations is a company that specializes in creating innovative Reactangles that are designed to make your life complete. Our products are designed to be simple, intuitive, and easy to use. We believe that technology should be accessible to everyone, and that's why we strive to create products that are easy to use and affordable. Our products are designed to help you get more done in less time, so you can spend more time doing the things you love.</p>
         <br>
@@ -27,8 +58,9 @@
         <p>Or if you want to learn more about us <a href="about.html">click here</a></p> 
     </div>
     
+    <!-- just for aethetics (not in all of them since it sometimes hides features) -->
     <div id="footer">
-    <!-- You can add content here -->
+        Copyright Rectangle Innovations 2024
     </div>   
 </body>
 </html>

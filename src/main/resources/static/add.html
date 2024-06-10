@@ -1,3 +1,10 @@
+<!-- 
+ /*
+ * AUTHOR: Asheesh Yadav
+ * DESCRIPTION: This is the add page containing a form to add a new rectangle
+ * DATE: 6/14/2024
+ *
+ */ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +16,18 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <!-- see home.html for logic for this and footer division -->
     <div id="btns">
         <a id="about"href="/about.html">About</a>
         <a id="products"href="/users/view">Products</a>
         <a id="home" href="/home.html">Home</a>
     </div>
+    <!-- Used and reformed the add page from the yt tutorial -->
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-4 custom-form">
                 <h1 id="newUser"class="text-center mt-5 mb-4">New User</h1>
+                <!-- this info is sent to the endpoint in usersController when the submit button is pressed -->
                 <form form action="/users/add" method="post">
                     <div class="mb-3">
                         <input type="text"  id="name" name="name" class="form-control form-control-lg" placeholder="Name">
@@ -42,8 +52,9 @@
             </div>
         </div>
     </div>
+   
     <div id="footer">
-        <!-- You can add content here -->
-        </div> 
+        Copyright Rectangle Innovations 2024
+    </div> 
 </body>
 </html>

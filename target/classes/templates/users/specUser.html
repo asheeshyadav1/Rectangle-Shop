@@ -1,3 +1,10 @@
+<!-- 
+ /*
+ * AUTHOR: Asheesh Yadav
+ * DESCRIPTION: This is the page that shows specific user data and allows the user to edit the rectangle
+ * DATE: 6/14/2024
+ *
+ */ -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -5,15 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
     <title>Specific User Data</title>
 </head>
 <body>
+
+    <!-- See home.html for the logic for the this banner -->
     <div id="btns">
         <a id="about" href="/about.html">About</a>
         <a id="products" href="/users/view">Products</a>
         <a id="home" href="/home.html">Home</a>
     </div>
 
+    <!-- Kept the same format with the table and centering -->
     <div id="para">
         <div id="rectangle" th:style="'width:' + ${user.width} + 'px;height:' + ${user.height} + 'px;background-color:' + ${user.color}">
             <p th:text="${user.name}"></p>
@@ -44,10 +55,14 @@
                 <td id="area"></td>
             </tr>
         </table>
+        <!-- button activates that allows the user to edit this specific rectangle -->
         <button onclick="showEditForm()">Edit Rectangle</button>
     </div>
     
+    <!-- Form that is hidden until the user clicks the button -->
+     <!-- Form changes the attributes the user wants(keeps the same unchanged data) -->
     <div id="para">
+        <!-- When submitted it opens another page showing the confirmation -->
         <form id="editForm" th:attr="action=@{/users/edit/{name}(name=${user.name})}" method="post">
             <br>
             <label for="name">Name:</label><br>
@@ -63,12 +78,11 @@
         </form>
     
         <script>
+            // Function that shows the form when the button is clicked
             function showEditForm() {
                 document.getElementById('editForm').style.display = 'block';
             }
         </script>
     </div>
-    
-    <script src="/js/script.js"></script>
 </body>
 </html>
