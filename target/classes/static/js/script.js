@@ -1,11 +1,13 @@
-function editRectangle() {
-    var name = prompt("Enter new name");
-    var color = prompt("Enter new color");
-    var width = prompt("Enter new width");
-    var height = prompt("Enter new height");
+window.onload = function() {
+    // Get width and height from the table and convert them to numbers
+    var width = parseInt(document.getElementById('width').innerText);
+    var height = parseInt(document.getElementById('height').innerText);
 
-    document.getElementById("name").textContent = name;
-    document.getElementById("color").textContent = color;
-    document.getElementById("width").textContent = width;
-    document.getElementById("height").textContent = height;
+    // Calculate perimeter and area
+    var perimeter = 2 * (width + height);
+    var area = width * height;
+
+    // Display perimeter and area in the table
+    document.getElementById('perimeter').innerText = perimeter;
+    document.getElementById('area').innerText = area;
 }

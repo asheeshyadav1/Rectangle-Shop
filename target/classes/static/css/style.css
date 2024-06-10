@@ -1,0 +1,159 @@
+html, body, title{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+#btns{
+    padding: 10px 20px;
+    text-align: left;
+    background-color: #1890ff; /* Bright blue */
+}
+
+#btns a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #1890ff; /* Bright blue buttons */
+    border: 1px solid #1890ff; /* Bright blue border */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btns a:hover {
+    background-color: #40a9ff; /* Lighter blue on hover */
+}
+
+body h1, h2{
+    text-align: center;
+    margin-top: 50px;
+    color: #001529; /* Dark blue headings */
+    margin-top: 100px;
+}
+
+#para{
+    text-align: center;
+    color: #001529; /* Dark blue paragraph text */
+    padding-left: 20px; /* Add padding to the left */
+    padding-right: 20px; /* Add padding to the right */
+    font-size: 20px;
+}
+
+.add {
+    display: inline-block; /* Make the element inline-block so it can have padding and margins */
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #1890ff; /* Bright blue background */
+    border: 1px solid #1890ff; /* Bright blue border */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add:hover {
+    background-color: #40a9ff; /* Lighter blue on hover */
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px; /* Set a specific height */
+    background-color: #1890ff; /* Bright blue footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Increase vertical padding */
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 50%; /* Adjust as needed */
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1890ff; /* Bright blue header */
+    color: white;
+}
+
+.table td {
+    text-align: center;
+}
+ input.form-control.form-control-lg {
+    width: 1200%; /* Adjust as needed */
+    padding: 1.5rem 1rem; /* Increase vertical padding */
+    margin-bottom: 1rem; /* Increase space between inputs */
+    margin-left: -350px; /* Center the input fields */
+    margin-right: 100px; /* Center the input fields */
+    
+}
+
+input[type="color"].form-control.form-control-lg {
+    height: 75px; /* Adjust as needed */
+}
+
+h1.text-center {
+    font-size: 2rem; /* Adjust as needed */
+    text-align: center;
+    width: 250px; /* Adjust as needed */
+    margin-right: 100px; /* Pushes the h1 element to the left */
+}
+#newUser{
+    margin-left: -100px; /* Pushes the form to the right */
+}
+#userData {
+    width: 50%; /* Adjust as needed */
+    border-collapse: collapse;
+    margin: 50px auto; /* Adjust as needed */
+}
+
+#userData th, #userData td {
+    border: 5px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+#userData th {
+    background-color: #f2f2f2;
+    color: black;
+}
+#editForm {
+    display: none;
+}
+#rectangle {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+/* #para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
