@@ -1,1 +1,1 @@
-In this Github Repo exists my ASN #2 for CMPT 276. Here I have used Spring boot webframe to host the (mock)compnay "Rectangle Innovation" on render. This is a full stack web application to a database in psql where it retrieves, delete, displays, and adds rectangles. Chatbots were used to make the website slogan and keep up with aesthetics. 
+
